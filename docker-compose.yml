@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  python:
+    build: ./python
+    ports:
+      - "5000:5000"
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+  node:
+    build: ./node-server
+    ports:
+      - "8000:8000"
